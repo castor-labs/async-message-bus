@@ -1,0 +1,39 @@
+{
+    "name": "castor/async-message-bus",
+    "description": "Async execution model for your message bus",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "keywords": ["php", "container", "psr", "php7"],
+    "authors": [
+        {
+            "name": "Matias Navarro Carter",
+            "email": "mnavarrocarter@gmail.com"
+        }
+    ],
+    "config": {
+        "platform": {
+            "php": "7.4"
+        }
+    },
+    "require": {
+        "php": ">=7.4",
+        "castor/message-bus": "^0.1.0",
+        "castor/queue": "^0.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Castor\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Castor\\": "tests"
+        }
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "friendsofphp/php-cs-fixer": "^3.0",
+        "phpunit/phpunit": "^9.5",
+        "vimeo/psalm": "^4.6"
+    }
+}
